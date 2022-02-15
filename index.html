@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Good Vibes Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Good Vibes Form</h1>
+
+        <div class="form-container">
+          <p class="form-heading">
+            Tell us something positive that happened to you today &#128516;
+          </p>
+
+          <form class="form" action="#">
+            <label class="full-name-label" for="full-name">Full name</label>
+            <input
+              id="full-name"
+              class="full-name-input"
+              type="text"
+              placeholder="John Smith"
+              required
+            />
+
+            <label class="email-label" for="email">Email address</label>
+            <input
+              id="email"
+              class="email-input"
+              type="email"
+              placeholder="me@example.com"
+              required
+            />
+
+            <label class="number-label" for="number"
+              >On a scale of 1-10, how good was it?</label
+            >
+            <input
+              type="number"
+              class="number-input"
+              id="number"
+              placeholder="Enter a number between 1 and 10"
+              min="1"
+              max="10"
+            />
+
+            <label class="dropdown-label" for="dropdown" id="dropdown-label"
+              >Where did it happen?</label
+            >
+
+            <select
+              name="Location of positive event"
+              id="dropdown"
+              class="dropdown"
+            >
+              <option value="home">At home</option>
+              <option value="commute">On my commute</option>
+              <option value="work">At work</option>
+              <option value="outside">On the street</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label class="td-label" for="time-of-day"
+              >At what time of day did it happen?</label
+            >
+            <div>
+              <ul class="time-of-day">
+                <li>
+                  <label class="radio">
+                    <input
+                      name="time-radio"
+                      type="radio"
+                      value="1"
+                      class="user-selection"
+                    />
+                    Morning
+                  </label>
+                </li>
+                <li>
+                  <label class="radio">
+                    <input
+                      name="time-radio"
+                      type="radio"
+                      value="2"
+                      class="user-selection"
+                    />
+                    Afternoon
+                  </label>
+                </li>
+                <li>
+                  <label class="radio">
+                    <input
+                      name="time-radio"
+                      type="radio"
+                      value="3"
+                      class="user-selection"
+                    />
+                    Evening
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <label class="feelings-label" for="feelings">
+              What emotions did you experience?
+              <br />
+              (Select all that apply)
+            </label>
+
+            <div class="fields">
+              <ul id="feelings">
+                <li>
+                  <label class="radio">
+                    <input
+                      name="feeling-check"
+                      value="1"
+                      type="checkbox"
+                      class="user-selection"
+                    />
+                    Excited
+                  </label>
+                </li>
+                <li>
+                  <label class="radio">
+                    <input
+                      name="feeling-check"
+                      value="2"
+                      type="checkbox"
+                      class="user-selection"
+                    />
+                    Humbled
+                  </label>
+                </li>
+                <li>
+                  <label class="radio">
+                    <input
+                      name="feeling-check"
+                      value="3"
+                      type="checkbox"
+                      class="user-selection"
+                    />
+                    Elated
+                  </label>
+                </li>
+                <li>
+                  <label class="radio">
+                    <input
+                      name="feeling-check"
+                      value="4"
+                      type="checkbox"
+                      class="user-selection"
+                    />
+                    Loved
+                  </label>
+                </li>
+                <li>
+                  <label class="radio">
+                    <input
+                      name="feeling-check"
+                      value="5"
+                      type="checkbox"
+                      class="user-selection"
+                    />
+                    Enthusiastic
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <label class="textarea-label" for="event-details">
+              Please describe your positive experience.
+            </label>
+
+            <textarea
+              id="event-details"
+              class="textarea"
+              name="event-details"
+              cols="1"
+              rows="1"
+              placeholder="Enter your experience here..."
+              required
+            ></textarea>
+
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
