@@ -110,6 +110,7 @@ h1 {
 .form-container {
   width: 100%;
   padding: 3.6rem;
+  margin-bottom: 9.6rem;
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #c4ffcc, #76cf82);
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.151);
